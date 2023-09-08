@@ -1,0 +1,700 @@
+<html>
+
+<head>
+    <title>kalamkaarpublication.com</title>
+    <!-- <link rel="stylesheet" href="timetable.css"> -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            display: block;
+            text-align: center;
+            color: black;
+            font-size: xx-large;
+            background-color: orange;
+            padding: 10px 0px 10px 0px;
+        }
+
+        h3 {
+            color: rgb(32, 29, 30);
+        }
+
+        .c {
+            height: 5px;
+            width: 150px;
+            display: inline-block;
+            /* margin-top:  50px; */
+            padding-right: 80px;
+            padding-left: 80PX;
+            padding-top: 30PX;
+            padding-bottom: 30PX;
+            font-weight: bold;
+            font-size: x-large;
+            color: black;
+        }
+
+        .c:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /*navbar*/
+        .first {
+            /* border: 5px solid black; */
+            background-color: orange;
+            display: grid;
+            grid-template-columns: 160PX 160PX 160PX 160PX 160px 400px;
+            padding: 20PX;
+            justify-items: center;
+            /* position: sticky; */
+            top: 0;
+            z-index: 1;
+        }
+
+        .d-flex {
+            margin-top: 30px;
+            margin-left: 30px;
+
+        }
+
+        .form-control {
+            height: 40px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .btn {
+            height: 40px;
+            width: 100px;
+            border-radius: 8px;
+
+
+        }
+
+        .fa-brands {
+            font-size: xx-large;
+            height: 20px;
+            width: 50px;
+            display: inline-block;
+            /* margin-top:  50px; */
+            /* padding: 30px; */
+            font-weight: bold;
+        }
+
+        .fa-brands:hover {
+            color: red;
+        }
+
+        .fa-solid {
+            font-size: xx-large;
+            height: 20px;
+            width: 50px;
+        }
+
+        .fa-solid:hover {
+            color: red;
+        }
+
+        .fa-regular {
+            padding-right: 15px;
+        }
+
+
+        .fa-regular:hover {
+            color: red;
+        }
+
+        .a {
+            background-color: orange;
+            padding-top: 15px;
+            padding-bottom: 25px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: center;
+        }
+
+        .box-shadow {
+            box-shadow: 5px 5px 10px #555;
+        }
+
+        .drop-shadow {
+            filter: drop-shadow(5px 5px 10px #555);
+        }
+
+        .fa-whatsapp:hover {
+            color: green;
+        }
+
+        .fa-facebook:hover {
+            color: blue;
+        }
+
+        .b {
+            /* text-align: center; */
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            margin-top: 90px;
+            padding-right: 45PX;
+        }
+
+        .fa-ellipsis:hover {
+            color: black;
+            padding-right: 1px;
+            padding-left: 1px;
+        }
+
+        .e {
+            display: block;
+            width: 350px;
+            height: 250px;
+        }
+
+        .f {
+            display: grid;
+            width: 800px;
+
+        }
+
+        .j {
+            display: inline;
+            width: 170px;
+            margin-left: 65px;
+            font-size: xx-large;
+            /* padding-left: 140px; */
+            /* padding-bottom: 100px; */
+            border: 2px solid black;
+
+        }
+
+        .g {
+            text-transform: capitalize;
+            /* padding-left: 30px; */
+            font-size: xx-large;
+            display: inline-block;
+            width: 380px;
+            /* text-align: center; */
+
+        }
+
+        sup {
+            font-size: xx-large;
+        }
+
+        .d {
+            font-size: x-large;
+            margin-bottom: 17px;
+            color: black;
+
+        }
+
+        .d:hover {
+            text-decoration: underline;
+            text-transform: capitalize;
+            color: orange;
+        }
+
+        .body-table {
+            margin-top: 150px;
+        }
+
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            margin-top: 40px;
+            padding-top: 100px;
+            border: 4px double RED;
+            text-transform: capitalize;
+        }
+
+        td {
+            padding: 10px;
+            color: green;
+            font-weight: 600;
+            font-size: x-large;
+        }
+
+        th img {
+            border: 2px solid black;
+        }
+
+        th {
+            padding: 25px;
+            font-size: xx-large;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .fa-address-book {
+            padding-top: 3px;
+        }
+
+        /* shopsectiom */
+        .shop-section {
+            height: 452px;
+            display: flex;
+            margin-bottom: 47px;
+            justify-content: flex-start;
+            text-align: center;
+            text-transform: capitalize;
+
+        }
+
+        /* .shop-books{
+              height: 750px;
+            display: flex;
+            margin-bottom: 47px;
+            justify-content: flex-start;
+            text-align: center;
+            text-transform: capitalize;
+
+        } */
+        .box {
+            background-color: white;
+            width: 45%;
+            height: 500px;
+            margin-top: 20px;
+            border-right: 2px solid black;
+        }
+
+        .box-img {
+            height: 300px;
+            width: 300px;
+            display: inline;
+            background-size: cover;
+
+        }
+
+        .click {
+            border-radius: 30px;
+            display: block;
+            margin-left: 200px;
+            margin-top: 20px;
+            padding: 0 30px 0 30px;
+            font-size: large;
+
+        }
+
+        .click:hover {
+            background-color: rgb(171, 165, 165);
+        }
+
+        /* navbar */
+        .container {
+            background-color: orange;
+            height: 540px;
+        }
+
+        .footer {
+            padding-top: 15px;
+            padding-bottom: 25px;
+            display: grid;
+            grid-template-columns: 230px 230px 230px 230px;
+            justify-content: space-evenly;
+        }
+
+        .nav-ul {
+            list-style-type: none;
+            font-size: 1.5rem;
+            padding: 0;
+        }
+
+        .nav-li {
+            margin-bottom: 25px;
+            color: #554348;
+
+        }
+
+        .nav-li:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            display: grid;
+            justify-content: center;
+            padding: 10px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .fa-copyright:hover {
+            color: black;
+
+        }
+
+        .nav-con {
+            list-style-type: none;
+        }
+
+        .fa-laptop-code:hover {
+            color: black;
+        }
+
+        .con-dev:hover {
+            text-decoration: underline;
+        }
+
+        .fa-spotify:hover {
+            color: rgb(8, 147, 8);
+        }
+
+        .fa-itunes:hover {
+            color: #D948DD;
+        }
+
+        .fa-amazon:hover {
+            color: #0077C1;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/fa6533ee52.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="first">
+        <I> <img src="logo.jpg-modified.png" width="70px" height="70px" class="drop-shadow"
+                style="color: transparent;"></I>
+        <a href="">
+            <li class="c"><i class="fa-solid fa-house"></i>Home</li>
+        </a>
+        <a href="#award">
+            <li class="c"><i class="fa-solid fa-award"></i>Awards</li>
+        </a>
+        <a href="https://goo.gl/maps/ZzRe1cDP1zMkSLsDA" target="_blank">
+            <li class="c"><i class="fa-solid fa-location-dot"></i>Location</li>
+        </a>
+        <a href="#Contactus">
+            <li class="c"><i class="fa-regular fa-address-book"></i>Contact us</li>
+        </a>
+    </div>
+    <div class="p">
+        <h1>Sudha Jain'Sudeep'</h1>
+    </div>
+    <h2>
+        <marquee direction="LEFT" clickin="stop">Welcome To My PAGE !
+            ❤️Human being🤍
+            🌴Environment Lover💚
+            ✍️Eminent Writer & Poetess💜
+            📚Educationist & Motivational🎤Speaker💙
+            🎹🎼 FOLK Singer & Music lover💕
+            YouTuber</marquee>
+    </h2>
+    <h1>
+        Kalamkaar Publication(Books Writer)
+    </h1>
+    <div class="shop-section">
+        <div class="box box1">
+            <h2 class="box-book">mukhatib hoon tumse</h2>
+            <div class="box-img"><img src="1.jpg" height="300px" width="200px"><img src="2.jpg" height="300px"
+                    width="200px"></div>
+            <button class="click">
+                <h3>Rs.<del>100</del><sup>90/-</sup></h3>
+            </button>
+        </div>
+        <div class="box box2">
+            <h2 class="box-book">guftgu tumse</h2>
+            <div class="box-img"><img src="3.jpg" height="300px" width="200px"><img src="4.jpg" height="300px"
+                    width="200px"></div>
+            <button class="click">
+                <h3>Rs.<del>150</del><sup>120/-</sup></h3>
+            </button>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="box box3">
+            <h2 class="box-book">bal sudha geet-1</h2>
+            <div class="box-img"><img src="5.jpg" height="300px" width="200px"><img src="6 (2).jpg" height="300px"
+                    width="200px"></div>
+            <button class="click">
+                <h3>Rs.<del></del>50/-</h3>
+            </button>
+        </div>
+        <div class="box box4">
+            <h2 class="box-book">nibandh-sudha(bal-sahitya)</h2>
+            <div class="box-img"><img src="6.jpg" height="300px" width="200px"><img src="7.jpg" height="300px"
+                    width="200px"></div>
+            <button class="click">
+                <h3>Rs.<del>200</del><sup>150/-</sup></h3>
+            </button>
+        </div>
+    </div>
+    <div class="shop-section shop-books">
+        <div class="box box7">
+            <h2 class="box-book">jio aur jine do(hindi short plays)</h2>
+            <div class="box-img"><img src="jj.jpeg" height="300px" width="200px"><img src="JJJ.jpeg" height="300px"
+                    width="200px"></div>
+            <button class="click">
+                <h3>Rs.<del>250</del><sup>200/-</sup></h3>
+            </button>
+
+        </div>
+        <div class="box box6">
+            <h2 class="box-book">Bharat de rashtria prateek( Punjabi)</h2>
+            <div class="box-img"><img src="FINAL 2022-04-25 at 6.06.07 PM TITLE.jpeg" height="300px" width="320px"><img
+                    src="FINAL TITLE NS 2022-04-25 at 6.06.07.jpeg" height="300px" width="320px">
+            </div>
+            <button class="click">
+                <h3>Rs.<del>150</del><sup>140/-</sup></h3>
+            </button>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="box box5">
+            <h2 class="box-book">Bharat ke rashtriya prateek( hindi)</h2>
+            <div class="box-img"><img src="9.jpg" height="300px" width="320px"><img src="10.jpg" height="300px"
+                    width="320px"></div>
+            <button class="click">
+                <h3>Rs.<del>150</del><sup>130/-</sup></h3>
+            </button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="body-table">
+        <h1 id="award">
+            Achievements(Award time-Reward time)
+        </h1>
+        <div class="Q">
+            <table border="1">
+                <tr>
+                    <th>S.No</th>
+                    <th>Award Name</th>
+                    <TH>Certificate</TH>
+                    <th>Given By</th>
+
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td> Governor of Punjab Award <br><br>25.03.1988</td>
+                    <th><img src="11.jpg" width="300PX" height="370px"></th>
+                    <td>Directorate of Youth Services,Punjab</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Certificate of Appreciation <br><br>27.05.1988</td>
+                    <th><img src="6.png" width="360px" height="250px"></th>
+                    <td>Programme Coordinator,N.S.S<br>Guru Nanak Dev University, Amritsar</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Certificate of Merit<br><br>26.03.1989</td>
+                    <th><img src="10 (2).jpg" width="360px" height="250px"></th>
+                    <td>Junior Chamber,Nawanshahr</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td> Guru Vandan Chhatra Abhinandan <br><br>05.09.2006</td>
+                    <th><img src="22.png" width="360px" height="250px"></th>
+                    <td>Bharat Vikas Parishad,Mohali <br>(S.A.S Nagar)</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>State Level honour Letter <br><br>01.11.2010</td>
+                    <th><img src="31.jpg" width="300px" height="390px"></th>
+                    <td>Spl.Secy.cum D.G.S.E &
+                        <br>S.P.D S.S.A.A,Punjab
+                    </td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>State Innovative Teacher Learning Award <br><br>11.11.2011</td>
+                    <th><img src="34 (1).jpg" width="370px" height="250px"></th>
+                    <td>Microsoft India</td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td>Award of Appreciation<br><br>07.11.2012</td>
+                    <th><img src="41.jpg" width="250px" height="300px"></th>
+                    <td>Harman Radio,Australia</td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td>Appreciation Letter<br><br>26.01.2014</td>
+                    <th><img src="45.jpg" width="300px" height="390px"></th>
+                    <td>District Education Officer <br>(S.A.S Nagar)</td>
+                </tr>
+                <tr>
+                    <th>9</th>
+                    <td>Sanman Patar<br><br>19.04.2015</td>
+                    <th><img src="47.jpg" width="300px" height="390px"></th>
+                    <td>Sahit kala Sabhaychar Munch(R),Mohali</td>
+                </tr>
+                <tr>
+                    <th>10</th>
+                    <td>Teacher State Award <br><br>05.09.2015</td>
+                    <th><img src="48.jpg" width="300px" height="370px"></th>
+                    <td>Education Department,Punjab</td>
+                </tr>
+                <tr>
+                    <th>11</th>
+                    <td>Bal Sahit Purskar <br> for year-2014 <br><br>31.03.2016 </td>
+                    <th><img src="bal.png" width="250px" height="360px"></th>
+                    <td>Language Department,Punjab</td>
+                </tr>
+                <tr>
+                    <th>12</th>
+                    <td>Certificate of Appreciation<br><br>20.05.2016</td>
+                    <th><img src="51.jpg" width="380px" height="260px"></th>
+                    <td>Chairman Enviroment Matters & <br>Institute of Water & Environment,India</td>
+                </tr>
+                <tr>
+                    <th>13</th>
+                    <td>Certificate of Appreciation<br><br>12.06.2016</td>
+                    <th><img src="52.jpg" width="350px" height="280px"></th>
+                    <td>The Bharat Scouts & Guides,Punjab</td>
+                </tr>
+                <tr>
+                    <th>14</th>
+                    <td>Award of Appreciation <br><br>05.09.2017</td>
+                    <th><img src="58.jpg" width="360px" height="280px"></th>
+                    <td>Lions Club,Mohali</td>
+                </tr>
+                <tr>
+                    <th>15</th>
+                    <td>Appreciation Certificate<br><br>02.08.2018</td>
+                    <th><img src="59.jpg" width="300px" height="390px"></th>
+                    <td>Government of Punjab <br>(Department of School Education)</td>
+                </tr>
+                <tr>
+                    <th>16</th>
+                    <td>Certificate of Application<br><br>05.09.2021</td>
+                    <th><img src="65.jpg" width="300px" height="200px"></th>
+                    <td>Swaadhaar Social Welfare Society</td>
+                </tr>
+
+                <tr>
+                    <th>17</th>
+                    <td>Certificate of Appreciation<br><br>25.01.2022</td>
+                    <th><img src="66.jpg" width="300px" height="200px"></th>
+                    <td>DC cum-Distt. Election Officer, <br>S.A.S Nagar</td>
+                </tr>
+                <tr>
+                    <th>18</th>
+                    <td>Certificate of Appreciation<br><br>05.09.2022</td>
+                    <th><img src="67.jpg" width="300px" height="200px"></th>
+                    <td>Distt.Education Officer(S.E) <br>S.A.S Nagar</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <H1> <a href="https://www.youtube.com/channel/UCbid
+        uMagxDcz74FsyphH3oA" target="_blank"><i class="fa-brands fa-youtube"> </i>YouTube Channel (Playlist)</a>
+    </H1>
+    <ul>
+        <div class="e">
+            <h3>
+                <a href="https://youtube.com/playlist?list=PLcZx5pLQMkFFtyvY4WqZUkc-COr5LA_-Y" target="_blank">
+                    <li class="d">Punjabi Folk Songs</li>
+                </a>
+                <a href="https://youtube.com/playlist?list=PLcZx5pLQMkFEALXInaZdP0Q4HqiG4LnBO" target="_blank">
+                    <li class="d">One Act Plays</li>
+                </a>
+                <a href="https://youtube.com/playlist?list=PLcZx5pLQMkFHBVwxTYHHs6-_q29mGC1e2" target="_blank">
+                    <li class="d">Poetry</li>
+                </a>
+                <a href="https://youtube.com/playlist?list=PLcZx5pLQMkFF0BPnwcpYgINZyv9WG_nP_" target="_blank">
+                    <li class="d">Speeches On Different Topics</li>
+                </a>
+                <a href="https://youtube.com/playlist?list=PLcZx5pLQMkFGYc2NhFdUnYY0iFj7By0wv" target="_blank">
+                    <li class="d">Folk Dance</li>
+                </a>
+                <a href="https://youtube.com/playlist?list=PLcZx5pLQMkFGuogXK-rPjqh2CrB5uAsP6" target="_blank">
+                    <li class="d">Voter Awarness Activities</li>
+                </a>
+                <a href="" target="_blank">
+                    <li class="d">Personal Mast Life</li>
+                </a>
+                <a href="" target="_blank">
+                    <li class="d">Welcome Life</li>
+                </a>
+            </h3>
+        </div>
+    </ul><BR>
+    <div class="b">
+        <ul> <i class="fa-solid fa-ellipsis"></i></ul>
+    </div><BR>
+    <div class="container" id="Contactus">
+        <div class="footer">
+            <div class="nav-content">
+                <h2>Get to Know Us</h2>
+                <ul class="nav-ul">
+                    <a href="http://127.0.0.1:5500/Kalamkaar%20Publication/kpsecond.html">
+                        <li class="nav-li">Home</li>
+                    </a>
+                    <li class="nav-li">Blog</li>
+                    <li class="nav-li">
+                        <a class="nav-li" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="nav-con">
+                            <li class="footer-con"><a class="nav-li"
+                                    href="https://api.whatsapp.com/send/?phone=%2B919988310624&text&type=phone_number&app_absent=0"
+                                    target="_blank">Mobile
+                                    Number</a></li>
+                            <li class="footer-con"><a class="nav-li" href="">E-mail</a></li>
+                        </ul>
+                    <li class="nav-li"></li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <h2>Listen our Podcasts</h2>
+                <ul class="nav-ul">
+                    <a href="https://www.youtube.com/channel/UCrHL9RCPP7oEsBvhXz7ZciQ" target="_blank">
+                        <li class="nav-li"><i class="fa-brands fa-youtube"></i>YouTube</li>
+                    </a>
+                    <a href="https://open.spotify.com/artist/0iKH5SFZa3ieaEISsl620V?si=8IZkiwYNTxqffqUv4ErWkQ" target="_blank">
+                        <li class="nav-li"><i class="fa-brands fa-spotify"></i>Spotify</li>
+                    </a>
+                    <li class="nav-li"><i class="fa fa-amazon" style="size: 25px;"></i> Amazon Music</li>
+                    <li class="nav-li"><i class="fa-brands fa-itunes"></i>iTunes</li>
+                    <li class="nav-li"><i class="fa-solid fa-face-awesome"></i>Saavn</li>
+                    <li class="nav-li">Other Social media like Instagram,Snapchat etc</li>
+
+
+                </ul>
+            </div>
+            <div class="nav-content">
+                <h2>Connect with Us</h2>
+                <ul class="nav-ul">
+                    <li> <a class="nav-li" href="https://www.instagram.com/sudhasudeep_/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a class="nav-li" href="https://www.youtube.com/channel/UCbiduMagxDcz74FsyphH3oA"
+                            target="_blank"><i class="fa-brands fa-youtube"></i>YouTube</a></li>
+                    <li> <a class="nav-li"
+                            href="https://api.whatsapp.com/send/?phone=%2B919988310624&text&type=phone_number&app_absent=0"
+                            target="_blank"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
+                    <li><a class="nav-li" href="https://www.facebook.com/sudha.deepakjain" target="_blank"><i
+                                class="fa-brands fa-facebook"></i>Facebook</a></li>
+
+
+                </ul>
+            </div>
+            <div class="nav-content">
+                <h2>
+                    <a href="https://www.instagram.com/unnatjain_22/" target="_blank" class="con-dev"><i
+                            class="fa-solid fa-laptop-code"></i>Web Developer</a>
+                </h2>
+            </div>
+        </div>
+        <hr color="black">
+        <div class="copyright">
+            <a> <i class="fa-regular fa-copyright"></i>2023 Kalamkaar Publication</a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/fa6533ee52.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
